@@ -1,0 +1,14 @@
+<div class="flex-h">
+  <div class="people">
+    <h3>Some people:</h3>
+    <ul>
+      <li *ngFor="let person of peoples">
+        <a uiSref="people.person" [uiParams]="{ personId: person.id }" uiSrefActive="active">
+          {{ person.name }}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <ui-view></ui-view>
+</div>
