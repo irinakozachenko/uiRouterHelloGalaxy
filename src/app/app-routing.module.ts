@@ -10,7 +10,7 @@ import { PeopleComponent } from './people/people.component';
 import { PersonComponent } from './person/person.component';
 
 const helloState = { name: "hello", url: "/hello", component: HelloComponent };
-const aboutState = { name: "about", url: "/hello", component: AboutComponent };
+const aboutState = { name: "about", url: "/about", component: AboutComponent };
 
 const peopleState = {
   name: "people",
@@ -43,7 +43,7 @@ const personState = {
   imports: [
     UIRouterModule.forRoot({
     states: [helloState, aboutState, peopleState, personState],
-    useHash: true,
+    useHash: false,
     config: uiRouterConfigFn
   })],
 
