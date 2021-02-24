@@ -45,6 +45,7 @@ const personState = {
     states: [helloState, aboutState, peopleState, personState],
     useHash: false,
     config: uiRouterConfigFn
+
   })],
 
   exports: [UIRouterModule]
